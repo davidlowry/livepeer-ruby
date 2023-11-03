@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Livepeer"]
   s.email       = [""]
-  s.homepage    = "https://github.com/liveeer/livepeer-uby"
+  s.homepage    = "https://github.com/liveeer/livepeer-ruby"
   s.summary     = "Livepeer API Reference Ruby Gem"
   s.description = "Welcome to the Livepeer API reference docs. Here you will find all the endpoints exposed on the standard Livepeer API, learn how to use them and what they return. "
   s.license     = "Unlicense"
