@@ -150,7 +150,7 @@ module Livepeer
 
     def initialize
       @scheme = 'https'
-      @host = 'Livepeer.studio'
+      @host = 'livepeer.studio'
       @base_path = '/api'
       @server_index = nil
       @server_operation_index = {}
