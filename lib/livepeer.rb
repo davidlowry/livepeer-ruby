@@ -139,7 +139,7 @@ module Livepeer
     private
     
     def configure_api(api_key)
-      self.configure do |config|
+      Livepeer.configuration do |config|
         config.api_key['apiKey'] = api_key
         # config.api_key_prefix['apiKey'] = 'Bearer' # Uncomment if needed
       end
