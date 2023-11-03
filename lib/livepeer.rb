@@ -139,8 +139,8 @@ module Livepeer
     private
     
     def configure_api(api_key)
-      Livepeer.configure do |config|
-        config.api_key['apiKey'] = api_key
+      Livepeer::Client.configure do |config|
+        config.api_key['api_key'] = api_key
         # config.api_key_prefix['apiKey'] = 'Bearer' # Uncomment if needed
       end
     end
