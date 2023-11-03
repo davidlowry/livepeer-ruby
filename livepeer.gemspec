@@ -17,7 +17,7 @@ require "livepeer/version"
 
 Gem::Specification.new do |s|
   s.name        = "livepeer"
-  s.version     = livepeer::VERSION
+  s.version     = Livepeer::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Livepeer"]
   s.email       = [""]

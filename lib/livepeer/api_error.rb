@@ -10,7 +10,7 @@ OpenAPI Generator version: 7.0.1
 
 =end
 
-module livepeer
+module Livepeer
   class ApiError < StandardError
     attr_reader :code, :response_headers, :response_body
 

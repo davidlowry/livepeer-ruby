@@ -13,7 +13,7 @@ OpenAPI Generator version: 7.0.1
 require 'date'
 require 'time'
 
-module livepeer
+module Livepeer
   # Set to true to make default export to IPFS. To customize the pinned files, specify an object with a spec field. False or null means to unpin from IPFS, but it's unsupported right now. 
   module NewAssetPayloadStorageIpfs
     class << self
@@ -82,7 +82,7 @@ module livepeer
             return data.each_with_object({}) { |(k, v), hsh| hsh[k] = find_and_cast_into_type(sub_type, v) }
           end
         else # model
-          const = livepeer.const_get(klass)
+          const = Livepeer.const_get(klass)
           if const
             if const.respond_to?(:openapi_one_of) # nested oneOf model
               model = const.build(data)

@@ -13,7 +13,7 @@ OpenAPI Generator version: 7.0.1
 require 'date'
 require 'time'
 
-module livepeer
+module Livepeer
   # Whether the playback policy for a asset or stream is public or signed
   class PlaybackPolicy
     attr_accessor :type
@@ -222,7 +222,7 @@ module livepeer
         end
       else # model
         # models (e.g. Pet) or oneOf
-        klass = livepeer.const_get(type)
+        klass = Livepeer.const_get(type)
         klass.respond_to?(:openapi_one_of) ? klass.build(value) : klass.build_from_hash(value)
       end
     end

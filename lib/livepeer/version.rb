@@ -10,6 +10,6 @@ OpenAPI Generator version: 7.0.1
 
 =end
 
-module livepeer
+module Livepeer
   VERSION = '1.0.0'
 end

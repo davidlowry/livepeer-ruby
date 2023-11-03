@@ -13,7 +13,7 @@ OpenAPI Generator version: 7.0.1
 require 'date'
 require 'time'
 
-module livepeer
+module Livepeer
   # Payload received from Catalyst about the health of livestreams currently or recently active on Mist. 
   class StreamHealthPayload
     # The name of the stream within Catalyst/Mist, normally comprised of the base stream name with the playback ID after the + sign. 
@@ -257,7 +257,7 @@ module livepeer
         end
       else # model
         # models (e.g. Pet) or oneOf
-        klass = livepeer.const_get(type)
+        klass = Livepeer.const_get(type)
         klass.respond_to?(:openapi_one_of) ? klass.build(value) : klass.build_from_hash(value)
       end
     end

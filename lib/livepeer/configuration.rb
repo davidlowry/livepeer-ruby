@@ -10,7 +10,7 @@ OpenAPI Generator version: 7.0.1
 
 =end
 
-module livepeer
+module Livepeer
   class Configuration
     # Defines url scheme
     attr_accessor :scheme
@@ -150,7 +150,7 @@ module livepeer
 
     def initialize
       @scheme = 'https'
-      @host = 'livepeer.studio'
+      @host = 'Livepeer.studio'
       @base_path = '/api'
       @server_index = nil
       @server_operation_index = {}
@@ -248,7 +248,7 @@ module livepeer
     def server_settings
       [
         {
-          url: "https://livepeer.studio/api",
+          url: "https://Livepeer.studio/api",
           description: "No description provided",
         }
       ]

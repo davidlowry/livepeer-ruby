@@ -12,7 +12,7 @@ OpenAPI Generator version: 7.0.1
 
 require 'cgi'
 
-module livepeer
+module Livepeer
   class DefaultApi
     attr_accessor :api_client
 
